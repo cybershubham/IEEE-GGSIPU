@@ -10,3 +10,7 @@ a:hover{
 .bg-1{
 	background-color: #00426F;
 }
+
+.transition-timer-carousel-progress-bar {
+    background-color: #5cb85c;
+}

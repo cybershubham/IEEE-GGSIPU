@@ -8,6 +8,7 @@ html{
 	height: 100%;
 }
 body{
+	height: 100%;
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -31,3 +32,18 @@ a, a:hover, a:visited, a:focus{
 	font-size: 0.9em;
 }
 
+.carousel-control.left,.carousel-control.right{
+	background-image: none;
+}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+	
+.transition-timer-carousel-progress-bar {
+    height: 3px;
+    width: 0%;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
