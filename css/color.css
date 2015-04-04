@@ -1,0 +1,12 @@
+a:hover{
+	color: #b6cad9;
+}
+
+#ieee-links>a, #ieee-links>a:visited, #ieee-links>a:focus, #ieee-links{
+	color: #fff;
+}
+
+
+.bg-1{
+	background-color: #00426F;
+}
