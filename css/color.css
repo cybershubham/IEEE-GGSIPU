@@ -14,3 +14,24 @@ a:hover{
 .transition-timer-carousel-progress-bar {
     background-color: #5cb85c;
 }
+
+.demo{
+	border: 3px solid #3A619E;
+	border-top: none;
+	border-bottom: none;
+		  /*box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 1);*/
+}
+
+.section-1{
+	border-bottom: 5px solid #f2e124;
+}
+
+.border-3-gray{
+	border: 2px solid #c6c6c6;
+}
+
+.bg-quote{
+	background: #1abc9c url(../images/users_bg.jpg) repeat 0 0;
+	padding: 60px 0;
+	color: #fff;
+}
