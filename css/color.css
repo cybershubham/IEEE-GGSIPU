@@ -1,6 +1,12 @@
 a:hover{
 	color: #b6cad9;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav > li:hover {
+  color: #555;
+  background:  url(../images/ieee_silhoutte.png) #e7e7e7 no-repeat center center;
+  background-size: contain;
+}
 
 #ieee-links>a, #ieee-links>a:visited, #ieee-links>a:focus, #ieee-links{
 	color: #fff;
@@ -23,6 +29,7 @@ a:hover{
 }
 
 .section-1{
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	border-bottom: 5px solid #f2e124;
 }
 
@@ -34,4 +41,8 @@ a:hover{
 	background: #1abc9c url(../images/users_bg.jpg) repeat 0 0;
 	padding: 60px 0;
 	color: #fff;
+}
+
+footer{
+	background: #1C1C1C;
 }
