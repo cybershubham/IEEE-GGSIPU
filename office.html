@@ -10,15 +10,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/color.css" rel="stylesheet">
-	
+	<script src="js/modernizr.custom.js"></script>
 </head><!--/head-->
 
 <body data-spy="scroll" data-target=".scrollspy" data-offset="123">
 <div id="wrap">
 
 	<!-- PRELOADER -->
-		<div id="loader">
-		</div>
+		<!-- <div id="loader"></div> -->
 
 
 	<!-- Navbar -->
@@ -59,10 +58,10 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who we are? <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="#aboutieee">About IEEE</a></li>
-										<li><a href="#aboutsb">About IEEE GGSIPU</a></li>
-										<li><a href="#vision">Our Vision</a></li>
-										<li><a href="#benefits">Benefits</a></li>
+										<li><a href="about.html">About IEEE</a></li>
+										<li><a href="about.html#aboutsb">About IEEE GGSIPU</a></li>
+										<li><a href="about.html#vision">Our Vision</a></li>
+										<li><a href="about.html#benefits">Benefits</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -76,8 +75,8 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Our Team<span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="office.html#201415">Execom 2014-15</a></li>
-										<li><a href="office.html#201314">Execom 2013-14</a></li>
+										<li><a href="#201415" data-toggle="tab">Execom 2014-15</a></li>
+										<li><a href="#201314" data-toggle="tab">Execom 2013-14</a></li>
 									</ul>
 								</li>
 			                    <li><a href="#contact">Join us</a></li>       
@@ -90,47 +89,156 @@
 
 
 	<!-- Content -->
-		<div class="container-fluid bg-about">
+		<div class="container-fluid bg-team">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 scrollspy">
+					<div class="col-md-3 col-xs-12 scrollspy">
 						<ul id="aboutNav" class="nav nav-pills nav-stacked hidden-xs hidden-sm" data-spy="affix">
-							<li class="active"><a href="#aboutieee">About IEEE</a></li>
-							<li><a href="#aboutsb">About IEEE GGSIPU</a></li>
-							<li><a href="#vision">Our Vision</a></li>
-							<li><a href="#benefits">Benefits</a></li>
+							<li class="active"><a href="#201415" data-toggle="tab">Execom 2014-2015</a></li>
+							<li><a href="#201314" data-toggle="tab">Execom 2013-2014</a></li>
 						</ul>
 					</div>
-					<div class="col-md-7">
-						<section class="content" id="aboutieee">
-							<div class="page-header">
-								<div class="row">
-								<!-- <h3>About IEEE</h3> -->
-								<img class="img-responsive col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-3" src="http://www.ieee.org/about/toolkit/masterbrand/20040816">
+					<div class="col-md-9 col-xs-12">
+						<div class="tab-content">
+							<section class="tab-pane fade in active" id="201415">
+								<div class="page-header"><h3>Executive Committee 2014-2015</h3></div>
+								<div>
+									<ul class="grid">
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+									</ul>
 								</div>
-							</div>
-							<p>IEEE, Institute Of Electrical And Electronics Engineers (IEEE, pronounced as I-Triple-E) is the 125 years old world’s largest technical society. The society is headquartered in New York dedicated to advancing technological innovation and excellence of humanity.</p>
-							<p>IEEE and its members inspire global community through its highly cited publications, conferences, technology standards and professional plus educational activities. Its student branches contribute a lot in developing an engineer student’s personality and technical skills. Every day, IEEE societies make a difference in the world and the lives of their members. Today, IEEE is serving more than 425,000 members who are geographically organized into 10 regions over 333 sections and 2,345 student branches that conduct and participate in its activities.</p>
-							<p>At the pre-college level, the IEEE works with industry, universities and government to raise student’s literacy in science, maths, engineering and technology. IEEE journals are consistently among the most named in electrical and electronics engineering, telecommunications and other technical fields. IEEE is a leading developer of international standards that underpin many of today’s telecommunications, information technology and power generation products and services. IEEE helps in discovering better career opportunities and gain a better understanding of the field.</p>
-
-							<div class="hr"></div>
-						</section>
-						<section class="content" id="aboutsb">
-							<div class="page-header"><h3>About IEEE GGSIPU</h3></div>
-							<div class="hr"></div>
-						</section>
-						<section class="content" id="vision">
-							<div class="page-header"><h3>Our Vision</h3></div>
-							<div class="hr"></div>
-						</section>
-						<section class="content" id="benefits">
-							<div class="page-header"><h3>Benefits</h3></div>
-							<div class="hr"></div>
-						</section>
+								<div class="hr"></div>
+							</section>
+							<section class="tab-pane fade in" id="201314">
+								<div class="page-header"><h3>Executive Committee 2013-2014</h3></div>
+								<div>
+									<ul class="grid">
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img class="img-responsive" src="images/execom/shubham.jpg" alt="img02">
+												<figcaption>
+													<h3>Music</h3>
+													<span>Jacob Cummings</span>
+												</figcaption>
+											</figure>
+										</li>
+									</ul>
+								</div>
+								<div class="hr"></div>
+							</section>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -169,14 +277,18 @@
 	    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript" src="js/scrollNav.js"></script>
+		<script src="js/toucheffects.js"></script>
 
-		<script>
+		 <script>
 
 		//affix offset
 		$('#aboutNav').affix({
     		offset: {
 			bottom: ($('footer').outerHeight(true)+25)}
+		});
+		$(function () {
+		   var activeTab = $('[href=' + location.hash + ']');
+		   activeTab && activeTab.tab('show');
 		});
 	    
 

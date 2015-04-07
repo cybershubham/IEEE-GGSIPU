@@ -235,7 +235,6 @@ a, a:hover, a:visited, a:focus{
   bottom: -30px;
   width: 100%;
   height: 60px;
-  background: #FFFFFF;
   -webkit-transform: skewY(2.5deg);
   -moz-transform: skewY(2.5deg);
   -ms-transform: skewY(2.5deg);
@@ -348,14 +347,14 @@ a, a:hover, a:visited, a:focus{
 		    }
 		}
 
-.content .hr{
+section .hr{
     margin: 25px 0;
     height: 1px;
     background: black;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
 
-/*#aboutNav*/
+/*#affix*/
 .affix-top {
   position: relative;
 }
@@ -366,3 +365,132 @@ a, a:hover, a:visited, a:focus{
 .affix-bottom {
   position: absolute;
 }
+
+.bg-team .col-xs-12{
+	overflow: hidden;
+}
+
+
+	/*Execom grid*/
+		.grid {
+			padding: 20px 20px 100px 20px;
+			max-width: 1300px;
+			margin: 0 auto;
+			list-style: none;
+			text-align: center;
+			/*overflow: hidden;*/
+		}
+
+		.grid li {
+			display: inline-block;
+			width: 250px;
+			/*overflow: hidden;*/
+			margin: 0;
+			padding: 20px;
+			text-align: left;
+			position: relative;
+		}
+
+		.grid figure {
+			margin: 0;
+			position: relative;
+		}
+
+		.grid figure img {
+			max-width: 100%;
+			display: block;
+			position: relative;
+			z-index: 10;
+		}
+
+		.grid figcaption {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 20px;
+			background: #2c3f52;
+			color: #ed4e6e;
+		}
+
+
+		.grid figcaption h3 {
+			margin: 0;
+			padding: 0;
+			color: #fff;
+		}
+
+		.grid figcaption span:before {
+			content: 'by ';
+		}
+
+		.grid figcaption a {
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 2px;
+			display: inline-block;
+			background: #ed4e6e;
+			color: #fff;
+		}
+		.grid figcaption {
+				height: 90px;
+				width: 100%;
+				top: auto;
+				bottom: 0;
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+
+		.grid figcaption a {
+				position: absolute;
+				right: 20px;
+				top: 30px;
+			}
+
+		@media (max-width: 767px){
+			.grid figure img {
+				z-index: 10;
+				-webkit-transition: -webkit-transform 0.4s;
+				-moz-transition: -moz-transform 0.4s;
+				transition: transform 0.4s;
+			}
+
+			.no-touch .grid figure:hover img,
+			.grid figure.cs-hover img {
+				-webkit-transform: translateY(-90px);
+				-moz-transform: translateY(-90px);
+				-ms-transform: translateY(-90px);
+				transform: translateY(-90px);
+			}
+			
+		}
+
+		@media (min-width: 768px){
+			.grid figure figcaption {
+				z-index: 10;
+				-webkit-transition: -webkit-transform 0.4s;
+				-moz-transition: -moz-transform 0.4s;
+				transition: transform 0.4s;
+			}
+
+			.no-touch .grid figure:hover figcaption,
+			.grid figure.cs-hover figcaption {
+				-webkit-transform: translateY(+90px);
+				-moz-transform: translateY(+90px);
+				-ms-transform: translateY(+90px);
+				transform: translateY(+90px);
+			}
+		}
+		@media screen and (max-width: 31.5em) {
+			.grid {
+				padding: 10px 10px 100px 10px;
+			}
+			.grid li {
+				width: 100%;
+				min-width: 300px;
+			}
+		}
+
+		.embed-responsive-301{
+			padding-bottom: 301%;
+		}

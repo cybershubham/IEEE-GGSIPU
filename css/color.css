@@ -37,10 +37,60 @@ a:hover{
 	border: 2px solid #c6c6c6;
 }
 
+.page-header{
+	/*border-bottom: 3px solid #662E8F;*/
+	/*border-bottom-width: 80%;*/
+	/*background: url(../images/border-bullet.png) no-repeat;*/
+	/*background-size: auto 50%;*/
+	/*background-position: 100% 100%;*/
+}
+
 .bg-quote{
 	background: #1abc9c url(../images/users_bg.jpg) repeat 0 0;
 	padding: 60px 0;
 	color: #fff;
+}
+
+.bg-team{
+	background: url(../images/bg-sil-2.png) #fff no-repeat;
+	background-size: auto 50%;
+	background-position: 100% 115%;
+	background-attachment: fixed;
+}
+
+.bg-join{
+	background: url(../images/bg-sil-4b.png) #fff no-repeat;
+	background-size: auto 65%;
+	background-position: 100% 115%;
+	background-attachment: fixed;
+}
+.bg-about{
+	background: url(../images/bg-sil-1.png) #fff no-repeat;
+	background-size: 100vh auto;
+	background-position: 125% 100%;
+	background-attachment: fixed;
+}
+
+.section-2:after{
+  background: #fff;
+}
+
+.bg-home{
+	background: url(../images/bg-sil-3l.png) right top repeat-y;
+	/*background-color: rgba(90, 90, 222, 0.73);*/
+}
+
+@media (min-width: 992px) {
+	.bg-home{
+		background: url(../images/bg-sil-3r.png) right top repeat-y;
+	}
+  
+}
+@media (min-width: 1200px) {
+	.bg-home{
+		background: url(../images/bg-sil-3l.png) left top repeat-y,
+					url(../images/bg-sil-3r.png) right top repeat-y;
+	}
 }
 
 footer{
