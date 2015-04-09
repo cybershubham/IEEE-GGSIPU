@@ -64,32 +64,37 @@ a:hover{
 	background-position: 100% 115%;
 	background-attachment: fixed;
 }
+
+.bg-contact{
+	background: url(../images/bg-sil-5.png) #fff no-repeat;
+	background-size: auto 40%;
+	background-position: 100% 105%;
+	background-attachment: fixed;
+}
+
 .bg-about{
 	background: url(../images/bg-sil-1.png) #fff no-repeat;
-	background-size: 100vh auto;
+	background-size: 45% auto;
 	background-position: 125% 100%;
 	background-attachment: fixed;
 }
 
-.section-2:after{
-  background: #fff;
-}
 
-.bg-home{
-	background: url(../images/bg-sil-3l.png) right top repeat-y;
+.section-2:after, .bg-home{
+	background: url(../images/bg-sil-3rs.png) #fff right top repeat-y;
 	/*background-color: rgba(90, 90, 222, 0.73);*/
 }
 
 @media (min-width: 992px) {
-	.bg-home{
-		background: url(../images/bg-sil-3r.png) right top repeat-y;
+	.section-2:after, .bg-home{
+		background: url(../images/bg-sil-3r.png) #fff right top repeat-y;
 	}
   
 }
 @media (min-width: 1200px) {
-	.bg-home{
+	.section-2:after, .bg-home{
 		background: url(../images/bg-sil-3l.png) left top repeat-y,
-					url(../images/bg-sil-3r.png) right top repeat-y;
+					url(../images/bg-sil-3r.png) #fff right top repeat-y;
 	}
 }
 

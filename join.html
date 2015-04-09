@@ -13,7 +13,7 @@
 	
 </head><!--/head-->
 
-<body data-spy="scroll" data-target=".scrollspy" data-offset="123">
+<body data-spy="scroll" data-target=".scrollspy" data-offset="148">
 <div id="wrap">
 
 	<!-- PRELOADER -->
@@ -51,7 +51,7 @@
 			                    <span class="icon-bar"></span>
 			                </button>
 			                <a class="navbar-brand" href="index.html">
-			                	<img class="img-responsive" src="images/logo.jpg" alt="logo">
+			                	<img class="img-responsive" src="images/logo_nav.png" alt="logo">
 			                </a>                    
 			            </div>
 			            <div class="collapse navbar-collapse scrollspy">
@@ -59,10 +59,10 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who we are? <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="#aboutieee">About IEEE</a></li>
-										<li><a href="#aboutsb">About IEEE GGSIPU</a></li>
-										<li><a href="#vision">Our Vision</a></li>
-										<li><a href="#benefits">Benefits</a></li>
+										<li><a href="about.html">About IEEE</a></li>
+										<li><a href="about.html#aboutsb">About IEEE GGSIPU</a></li>
+										<li><a href="about.html#vision">Our Vision</a></li>
+										<li><a href="about.html#benefits">Benefits</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -80,8 +80,8 @@
 										<li><a href="office.html#201314">Execom 2013-14</a></li>
 									</ul>
 								</li>
-			                    <li class="active"><a href="#contact">Join us</a></li>       
-			                    <li><a href="#contact">Contact</a></li>       
+			                    <li class="active"><a href="join.html">Join us</a></li>       
+			                    <li><a href="contact.html">Contact</a></li>       
 			                </ul>
 			            </div>
 			        </div>
@@ -93,7 +93,13 @@
 		<div class="container-fluid bg-join">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-3">
+						<ul id="sideNav" class="nav nav-pills nav-stacked hidden-xs hidden-sm" data-spy="affix">
+							<li class="active"><a href="#">Join IEEE</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-8">
 						<section class="embed-responsive embed-responsive-301">
 							<iframe src="https://docs.google.com/forms/d/1LKzlT9-CXCbXoL_vY80a2eGBJhiWUYwaI_LpB_OJkBI/viewform?embedded=true" frameborder="0" data-width="700" data-height="1400" marginheight="0" marginwidth="0"></iframe>
 							<div class="hr"></div>
@@ -145,7 +151,7 @@
 		<script>
 
 		//affix offset
-		$('#aboutNav').affix({
+		$('#sideNav').affix({
     		offset: {
 			bottom: ($('footer').outerHeight(true)+25)}
 		});
