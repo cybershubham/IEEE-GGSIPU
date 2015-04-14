@@ -37,13 +37,7 @@ a:hover{
 	border: 2px solid #c6c6c6;
 }
 
-.page-header{
-	/*border-bottom: 3px solid #662E8F;*/
-	/*border-bottom-width: 80%;*/
-	/*background: url(../images/border-bullet.png) no-repeat;*/
-	/*background-size: auto 50%;*/
-	/*background-position: 100% 100%;*/
-}
+
 
 .bg-quote{
 	background: #1abc9c url(../images/users_bg.jpg) repeat 0 0;
@@ -51,31 +45,41 @@ a:hover{
 	color: #fff;
 }
 
-.bg-team{
+
+.bg-attach{
+	display: block;
+	height: 100%;
+	width: 100%;
+	/*background-size: auto 50%;*/
+	/*background-position: 100% 115%;*/
+}
+.bg-office{
 	background: url(../images/bg-sil-2.png) #fff no-repeat;
 	background-size: auto 50%;
 	background-position: 100% 115%;
-	background-attachment: fixed;
 }
-
+.bg-event{
+	background: url(../images/bg-sil-2.png) no-repeat;
+	background-size: auto 50%;
+	background-position: 100% 115%;
+}
 .bg-join{
 	background: url(../images/bg-sil-4b.png) #fff no-repeat;
 	background-size: auto 65%;
 	background-position: 100% 115%;
-	background-attachment: fixed;
 }
-
 .bg-contact{
 	background: url(../images/bg-sil-5.png) #fff no-repeat;
 	background-size: auto 40%;
 	background-position: 100% 105%;
-	background-attachment: fixed;
 }
-
 .bg-about{
 	background: url(../images/bg-sil-1.png) #fff no-repeat;
-	background-size: 45% auto;
-	background-position: 125% 100%;
+	background-size: 30% auto;
+	background-position: 115% 100%;
+}
+.bg-attach.affix{
+	top: 0;
 	background-attachment: fixed;
 }
 
@@ -100,4 +104,22 @@ a:hover{
 
 footer{
 	background: #1C1C1C;
+	color: #fff;
+}
+
+/*Side Nav*/
+
+.nav-pills>li>a{
+	width: 100%;
+	border-radius: 0;
+	box-shadow: -4px 4px rgba(255, 255, 255, 1),-5px 5px rgba(60, 44, 92, 0.5);
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	color: #fff;
+	background: url(../images/tlcorner.png) no-repeat top left, url(../images/brcorner.png) no-repeat bottom right;
+	background-color: #337ab7;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background: url(../images/tlcorner.png) no-repeat top left, url(../images/brcorner.png) no-repeat bottom right;
+	background-color: #eee;
 }

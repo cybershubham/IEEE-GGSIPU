@@ -12,12 +12,6 @@
           );
       });
 
-
-//PreLoadeMe Preloader
-      $(window).load(function(){
-          $("#loader").fadeOut("slow");
-      });
-
 //FB Page plugin
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,3 +20,13 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+//affix offset
+    $('.toAffix').affix({
+        offset: {
+      bottom: ($('footer').outerHeight(true)+25)}
+    });
+//PreLoadeMe Preloader
+      $(window).load(function(){
+          $("#loader").fadeOut("slow");
+      });

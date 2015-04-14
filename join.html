@@ -17,8 +17,7 @@
 <div id="wrap">
 
 	<!-- PRELOADER -->
-		<div id="loader">
-		</div>
+		<div id="loader"></div>
 
 
 	<!-- Navbar -->
@@ -68,15 +67,14 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">What we do? <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="#">Events</a></li>
-										<li><a href="#">TechVeda</a></li>
-										<li><a href="#">Participation</a></li>
+										<li><a href="events.html">Events</a></li>
+										<li><a href="techveda.html">TechVeda</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Our Team<span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="office.html#201415">Execom 2014-15</a></li>
+										<li><a href="office.html">Execom 2014-15</a></li>
 										<li><a href="office.html#201314">Execom 2013-14</a></li>
 									</ul>
 								</li>
@@ -90,11 +88,12 @@
 
 
 	<!-- Content -->
-		<div class="container-fluid bg-join">
+		<div class="bg-attach bg-join toAffix" data-spy="affix"></div>
+		<div class="container-fluid">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						<ul id="sideNav" class="nav nav-pills nav-stacked hidden-xs hidden-sm" data-spy="affix">
+						<ul class="nav nav-pills nav-stacked hidden-xs hidden-sm toAffix" data-spy="affix">
 							<li class="active"><a href="#">Join IEEE</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 						</ul>
@@ -112,13 +111,37 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-xs-12"></div>
+					<div class="col-md-4 col-xs-12">
+						<div class="page-header">
+							<h3>GGSIPU</h3>
+						</div>
+						<a href="//www.ipu.ac.in" target="_blank"><img class="img-responsive" src="images/ipu_logo.png"></a>
+						<p>Guru Gobind Singh Indraprastha University, 'A' Grade accreditation by NAAC, established by Government of NCT of Delhi under the provisions of Guru Gobind Singh Indraprastha University Act, 1998 read with its Amendment in 1999.</p>
+					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="page-header">
 							<h3>Get in touch</h3>
 						</div>
+						<address>
+						  <strong>IEEE GGSIPU</strong><br>
+						 Guru Gobind Singh Indraprastha University<br>
+						 Sector - 16C Dwarka<br>
+						 Delhi - 110078, India<br>
+						</address>
+
+						<address>
+						  <strong>General Secretary</strong><br>
+						  <abbr title="Phone">P:</abbr> +91-9560796951<br>
+						  <a href="mailto:#">ieee.usict@gmail.com</a>
+						</address>
+							<h4>Quick Links</h4>
+						<ul class="list-unstyled">
+							<li><a href="http://www.r10sac.org/" target="_blank">IEEE India SAC</a></li>
+							<li><a href="http://delhi.r10sac.org/" target="_blank">IEEE Delhi Section</a></li>
+							<li><a href="http://www.ipu.ac.in" target="_blank">GGSIPU</a></li>
+						</ul>
 					</div>
-					<div class="col-md-5 col-sm-6">
+					<div class="col-md-4 col-sm-6">
 						<div class="page-header">
 							<h3>Follow us</h3>
 						</div>
@@ -147,17 +170,6 @@
 	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
 		<script type="text/javascript" src="js/scrollNav.js"></script>
-
-		<script>
-
-		//affix offset
-		$('#sideNav').affix({
-    		offset: {
-			bottom: ($('footer').outerHeight(true)+25)}
-		});
-	    
-
-		</script>
 
 </body>
 </html>
