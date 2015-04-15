@@ -95,7 +95,7 @@ a, a:hover, a:visited, a:focus{
 
 		.demo {
 		  position: absolute;
-		  width: 36rem;
+		  width: 33rem;
 		  height: 43rem;
 		  left: 5rem;
 		  padding-top: 22rem;
@@ -188,7 +188,7 @@ a, a:hover, a:visited, a:focus{
 		  position: absolute;
 		  top: 0;
 		  left: -1rem;
-		  width: 38rem;
+		  width: 35rem;
 		  height: 7rem;
 		  background: #39A5F7;
 		  overflow: hidden;

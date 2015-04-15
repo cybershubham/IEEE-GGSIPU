@@ -1,3 +1,8 @@
+a{
+	color: #337ab7; 
+	/*color: #031879;*/
+}
+
 a:hover{
 	color: #b6cad9;
 }
@@ -14,7 +19,7 @@ a:hover{
 
 
 .bg-1{
-	background-color: #00426F;
+	background-color: rgba(46, 152, 197, 0.83);
 }
 
 .transition-timer-carousel-progress-bar {
@@ -85,8 +90,8 @@ a:hover{
 
 
 .section-2:after, .bg-home{
-	background: url(../images/bg-sil-3rs.png) #fff right top repeat-y;
-	/*background-color: rgba(90, 90, 222, 0.73);*/
+	background: url(../images/bg-sil-3r.png) #fff right top repeat-y;
+	background-size: 50px auto;
 }
 
 @media (min-width: 992px) {
@@ -103,7 +108,10 @@ a:hover{
 }
 
 footer{
-	background: #1C1C1C;
+	background: #1c1c1c;
+	/*background: rgba(46, 152, 197, 1);*/
+	/*background: #131E3B;*/
+	/*background: #337ab7;*/
 	color: #fff;
 }
 
@@ -118,8 +126,37 @@ footer{
 	color: #fff;
 	background: url(../images/tlcorner.png) no-repeat top left, url(../images/brcorner.png) no-repeat bottom right;
 	background-color: #337ab7;
+	background-size: auto, auto 30%;
 }
-.nav>li>a:focus, .nav>li>a:hover {
+.nav-pills>li>a:focus, .nav-pills>li>a:hover {
 	background: url(../images/tlcorner.png) no-repeat top left, url(../images/brcorner.png) no-repeat bottom right;
-	background-color: #eee;
+	background-size: auto, auto 30%;
+	background-color: #BBD8FF;
+	color: #5A98C7;
+}
+
+.page-header{
+	padding-left: 5px;
+	padding-top: 2px;
+	border-left: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	background: url(../images/phbrcorner.png) no-repeat bottom right,
+				url(../images/phtlcorner.png) no-repeat top left,
+				url(../images/phborder.png) repeat-x bottom left,
+				url(../images/phborder.png) repeat-y bottom left;
+	background-origin: border-box;
+	background-size: auto 40%, auto 20%, auto, auto;
+}
+
+footer .page-header{
+	padding-left: 5px;
+	border-left: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	background: url(../images/fphbrcorner.png) no-repeat bottom right,
+				url(../images/fphtlcorner.png) no-repeat top left,
+				url(../images/phborder.png) repeat-x bottom left,
+				url(../images/phborder.png) repeat-y bottom left;
+	background-origin: border-box;
+	background-size: auto 40%, auto 20%, auto, auto;
+
 }
