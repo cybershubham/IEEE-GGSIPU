@@ -89,6 +89,12 @@ a, a:hover, a:visited, a:focus{
 	min-height: 43rem;
 }
 
+.carousel-caption {
+	top: 20px;
+}
+.carousel-caption h3{
+	font-size: 1.6em;
+}
 
 
 /*Section Navigation by Nikolay Talanov (source: http://codepen.io/suez/public/)*/
@@ -246,6 +252,14 @@ a, a:hover, a:visited, a:focus{
 
 .snippet{
 	margin: 10px auto;
+	border-left: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	background: url(../images/phbrcorner.png) no-repeat bottom right,
+				url(../images/phtlcorner.png) no-repeat top left,
+				url(../images/phborder.png) repeat-x bottom left,
+				url(../images/phborder.png) repeat-y bottom left;
+	background-origin: border-box;
+	background-size: auto 30px, auto 15px, auto, auto;
 }
 
 .section-2{
@@ -394,20 +408,17 @@ section .hr{
 }
 
 
-	/*Execom grid*/
 		.grid {
 			padding: 20px 20px 100px 20px;
 			max-width: 1300px;
 			margin: 0 auto;
 			list-style: none;
 			text-align: center;
-			/*overflow: hidden;*/
 		}
 
 		.grid li {
 			display: inline-block;
 			width: 250px;
-			/*overflow: hidden;*/
 			margin: 0;
 			padding: 20px;
 			text-align: left;
@@ -423,7 +434,6 @@ section .hr{
 			max-width: 100%;
 			display: block;
 			position: relative;
-			z-index: 10;
 		}
 
 		.grid figcaption {
@@ -435,17 +445,12 @@ section .hr{
 			color: #ed4e6e;
 		}
 
-
 		.grid figcaption h3 {
 			margin: 0;
 			padding: 0;
 			color: #fff;
 			font-size: 20px;
 		}
-
-		/*.grid figcaption span:before {
-			content: 'by ';
-		}*/
 
 		.grid figcaption a {
 			text-align: center;
@@ -455,56 +460,46 @@ section .hr{
 			background: #ed4e6e;
 			color: #fff;
 		}
-		.grid figcaption {
-				height: 90px;
-				width: 100%;
-				top: auto;
-				bottom: 0;
-				-webkit-backface-visibility: hidden;
-				-moz-backface-visibility: hidden;
-				backface-visibility: hidden;
-			}
 
-		.grid figcaption a {
-				position: absolute;
-				right: 20px;
-				top: 30px;
-			}
+		.cs-style-6 figure img {
+			z-index: 10;
+			-webkit-transition: -webkit-transform 0.4s;
+			-moz-transition: -moz-transform 0.4s;
+			transition: transform 0.4s;
+			-webkit-transform: translateY(-35px) scale(0.7);
+			-moz-transform: translateY(-35px) scale(0.7);
+			-ms-transform: translateY(-35px) scale(0.7);
+			transform: translateY(-35px) scale(0.7);
+		
+		}
 
-		/*@media (max-width: 767px){*/
-			.grid figure img {
-				z-index: 10;
-				-webkit-transition: -webkit-transform 0.4s;
-				-moz-transition: -moz-transform 0.4s;
-				transition: transform 0.4s;
-			}
+		.no-touch .cs-style-6 figure:hover img,
+		.cs-style-6 figure.cs-hover img {
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+		}
 
-			.no-touch .grid figure:hover img,
-			.grid figure.cs-hover img {
-				-webkit-transform: translateY(-90px);
-				-moz-transform: translateY(-90px);
-				-ms-transform: translateY(-90px);
-				transform: translateY(-90px);
-			}
-			
-		/*}
+		.cs-style-6 figcaption {
+			height: 100%;
+			width: 100%;
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
 
-		@media (min-width: 768px){
-			.grid figure figcaption {
-				z-index: 10;
-				-webkit-transition: -webkit-transform 0.4s;
-				-moz-transition: -moz-transform 0.4s;
-				transition: transform 0.4s;
-			}
+		.cs-style-6 figcaption h3 {
+			position: absolute;
+			bottom: 45px;
+		}
 
-			.no-touch .grid figure:hover figcaption,
-			.grid figure.cs-hover figcaption {
-				-webkit-transform: translateY(+90px);
-				-moz-transform: translateY(+90px);
-				-ms-transform: translateY(+90px);
-				transform: translateY(+90px);
-			}
-		}*/
+		.cs-style-6 figcaption span {
+			position: absolute;
+			bottom: 20px;
+		}
+
+
 		@media screen and (max-width: 31.5em) {
 			.grid {
 				padding: 10px 10px 100px 10px;
@@ -515,9 +510,9 @@ section .hr{
 			}
 		}
 
-		.embed-responsive-301{
-			padding-bottom: 301%;
-		}
+.embed-responsive-301{
+	padding-bottom: 301%;
+}
 
 
 /*Side Nav*/

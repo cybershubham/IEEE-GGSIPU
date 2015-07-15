@@ -1,2 +1,2 @@
-# IEEE-GGSIPU
-IEEE GGSIPU Student Branch website
+# IEEE-USICT
+IEEE USICT Student Branch website

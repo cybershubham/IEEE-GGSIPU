@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="IEEE USICT GGSIPU">
     <meta name="author" content="Shubham Jain">
-    <title>IEEE GGSIPU Student Branch</title>
+    <title>IEEE USICT Student Branch</title>
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700|Oswald:400,300,700|Raleway:400,100,200,300,600,500,700,800,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/color.css" rel="stylesheet">
-	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52837695-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head><!--/head-->
 
 <body data-spy="scroll" data-target=".scrollspy" data-offset="148">
@@ -59,7 +68,7 @@
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Who we are? <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
 										<li><a href="about.html">About IEEE</a></li>
-										<li><a href="about.html#aboutsb">About IEEE GGSIPU</a></li>
+										<li><a href="about.html#aboutsb">About IEEE USICT</a></li>
 										<li><a href="about.html#vision">Our Vision</a></li>
 										<li><a href="about.html#benefits">Benefits</a></li>
 									</ul>
@@ -78,7 +87,7 @@
 										<li><a href="office.html#201314">Execom 2013-14</a></li>
 									</ul>
 								</li>
-			                    <li><a href="join.html">Join us</a></li>       
+			                    <li><a href="join.html">Join us</a></li>    
 			                    <li class="active"><a href="contact.html">Contact</a></li>       
 			                </ul>
 			            </div>
@@ -99,10 +108,45 @@
 						</ul>
 					</div>
 					<div class="col-md-8">
-						<section class="embed-responsive embed-responsive-301">
-							<iframe src="https://docs.google.com/forms/d/1LKzlT9-CXCbXoL_vY80a2eGBJhiWUYwaI_LpB_OJkBI/viewform?embedded=true" frameborder="0" data-width="700" data-height="1400" marginheight="0" marginwidth="0"></iframe>
-							<div class="hr"></div>
-						</section>
+						<div class="col-sm-10 contact-form contact-box">
+                        <h4>Send us mail</h4>
+                        <p>Have a query? Want to contribute or be a part? Have a message for us? Feel free to write</p>
+                        <!-- ## contact form start ## -->
+                        <form name="form-contact-us" id="form-contact-us">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="txtName">Name: </label>
+                                        <input type="text" placeholder="Name"
+                                            class="form-control required" id="txtName" name="txtName" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="txtEmail">Email:</label>
+                                        <input type="text" placeholder="E-mail ID"
+                                            class="form-control required email" id="txtEmail" name="txtEmail" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtMessage">Message:</label>
+                                <textarea placeholder="Message" class="form-control required"
+                                    id="txtMessage" name="txtMessage" rows="10"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCaptcha"></label>
+                                <input
+                                    type="text" class="form-control required captcha"
+                                    placeholder="Are you human?" id="txtCaptcha" name="txtCaptcha" />
+                            </div>
+                            <div class="form-group">
+                                <input type="button" id="btn-Send" value="Send" class="btn btn-theme-inverse" />
+                            </div>
+                            <div class="col-lg-12" id="contact-form-message"></div>
+                        </form>
+                        <!-- ## contact form end ## -->
+                    </div>
 					</div>
 				</div>
 			</div>
@@ -123,7 +167,7 @@
 							<h3>Get in touch</h3>
 						</div>
 						<address>
-						  <strong>IEEE GGSIPU</strong><br>
+						  <strong>IEEE USICT</strong><br>
 						 Guru Gobind Singh Indraprastha University<br>
 						 Sector - 16C Dwarka<br>
 						 Delhi - 110078, India<br>
@@ -154,9 +198,9 @@
 				<hr>	
 				<div class="row">
 					<ul class="list-inline">
-						<li><a href="">Home</a></li>|
-						<li><a href="">Sitemap</a></li>|
-						<li><a href="">Contact</a></li>
+						<li><a href="index.html">Home</a></li>|
+						<li><a href="sitemap.html">Sitemap</a></li>|
+						<li><a href="contact.html">Contact us</a></li>
 						<li class="pull-right">Designed and Developed by <a href="http://www.shubhamja.in" target="_blank">Shubham Jain</a></li>
 					</ul>
 					
@@ -170,6 +214,8 @@
 	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
 		<script type="text/javascript" src="js/scrollNav.js"></script>
+		<script type="text/javascript" src="js/app.contact.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 
 </body>
 </html>

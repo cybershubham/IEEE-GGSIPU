@@ -50,6 +50,12 @@ a:hover{
 	color: #fff;
 }
 
+.bg-quote .item blockquote{
+	background: rgba(17, 20, 74, 0.71);
+}
+.bg-quote blockquote .small, blockquote small{
+	color: #000;
+}
 
 .bg-attach{
 	display: block;
@@ -160,3 +166,4 @@ footer .page-header{
 	background-size: auto 40%, auto 20%, auto, auto;
 
 }
+
